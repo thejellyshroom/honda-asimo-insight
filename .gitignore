@@ -37,11 +37,20 @@ Thumbs.db
 *.blend1
 ._*
 
+# Screen Recordigs
+*.mp4
+*.mov
+*.avi
+*.flv
+*.wmv
+*.mkv
+*.webm
+
+
 # Visual Studio / VS Code
 .vs/
 .vscode/
-*.csproj
-*.unityproj
+*.cs
 *.sln
 *.suo
 *.tmp
