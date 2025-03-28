@@ -7,7 +7,7 @@ public class AssembleShip : MonoBehaviour
     private Vector3 assembledPositions;
     private Quaternion assembledRotations;
     ChangeMaterials changeMaterialsScript;
-
+    NVBoids fishScript;
     bool assemblyComplete;
     bool soundPlayed = false;
     [SerializeField] GameObject[] partsForAssembly;
@@ -18,6 +18,7 @@ public class AssembleShip : MonoBehaviour
 
     void Awake()
     {
+        fishScript = FindFirstObjectByType<NVBoids>();
         assemblyComplete = false;
         soundPlayed = false;
         assembledPositions = new Vector3(0.0f, 0.0f, 0.0f);
@@ -27,6 +28,8 @@ public class AssembleShip : MonoBehaviour
 
         allSoundsFinished = false;
         savedConfigs.SetActive(false);
+        fishScript.enabled = false;
+        fishScript.gameObject.SetActive(false);
     }
 
     void Update()
@@ -45,6 +48,7 @@ public class AssembleShip : MonoBehaviour
                 float waitTime = 0.0f;
                 Debug.Log("Assembly complete - Attempting to change materials");
                 changeMaterialsScript.Invoke("ChangeToWater", 13.0f);
+                Invoke("ActivateFish", 13.0f);
 
                 PuzzleAudio.Instance.PlaySound(PuzzleAudio.Instance.getFinishedAssembly(), 1, 1.0f);
                 waitTime += PuzzleAudio.Instance.getFinishedAssembly().length + 1.0f;
@@ -62,6 +66,12 @@ public class AssembleShip : MonoBehaviour
                 hovering = StartCoroutine(AnimateShipMovement());
             }
         }
+    }
+
+    private void ActivateFish()
+    {
+        fishScript.enabled = true;
+        fishScript.gameObject.SetActive(true);
     }
 
     private void FinishAllSounds()

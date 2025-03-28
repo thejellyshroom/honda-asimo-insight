@@ -362,7 +362,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 245581523881440449, guid: 9442d241d2d8ecc47b49f256b55325c6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9442d241d2d8ecc47b49f256b55325c6, type: 3}
@@ -835,6 +836,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8863687007998093083, guid: 3366c93db35eb411296f198c97b81d15, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1741824751}
+    - targetCorrespondingSourceObject: {fileID: 8863687007998093083, guid: 3366c93db35eb411296f198c97b81d15, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 757312360}
     - targetCorrespondingSourceObject: {fileID: 6532878838200528428, guid: 3366c93db35eb411296f198c97b81d15, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1511118831}
@@ -1189,6 +1193,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724059052}
   m_CullTransparentMesh: 1
+--- !u!1 &757312359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757312360}
+  - component: {fileID: 757312361}
+  m_Layer: 0
+  m_Name: NVBoids Fish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &757312360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757312359}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.17, y: 1.089, z: 0.109}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 145988222}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757312361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757312359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa35b9623162614881082335023629b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behavioralCh: {x: 2, y: 6}
+  debug: 0
+  fishNum: 10
+  baseFishSpeed: 0.1
+  boundaryRadius: 8
+  soaring: 0.76
+  verticalWawe: 10
+  directionChangeSpeed: 2
+  rotationClamp: 0
+  rotationClampValue: 50
+  scaleRandom: {x: 0.3, y: 0.6}
+  fishPrefab: {fileID: 3866908435750393346, guid: e77b7e344112b5f4c8d708dc75ad5c16, type: 3}
+  HelpURL: nvjob.github.io/unity/nvjob-boids
+  ReportAProblem: nvjob.github.io/support
+  Patrons: nvjob.github.io/patrons
 --- !u!1 &764532157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 257630628446466134, guid: 1874510de3481450c9c1fc9609949809, type: 3}
@@ -1264,7 +1327,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 245581523881440449, guid: 9442d241d2d8ecc47b49f256b55325c6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9442d241d2d8ecc47b49f256b55325c6, type: 3}
