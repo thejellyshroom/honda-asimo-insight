@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 54ee640622d54e743ba2bd1e2dc4d822
+timeCreated: 1564637662
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 151564
+  packageName: Boomerang Girl
+  packageVersion: 1.0
+  assetPath: Assets/JKTART/ani/jump.anim
+  uploadId: 323330

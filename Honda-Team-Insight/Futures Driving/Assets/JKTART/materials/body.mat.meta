@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 7355381b1e2ffcd47b5f74c87e263dd5
+timeCreated: 1564637687
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 151564
+  packageName: Boomerang Girl
+  packageVersion: 1.0
+  assetPath: Assets/JKTART/materials/body.mat
+  uploadId: 323330

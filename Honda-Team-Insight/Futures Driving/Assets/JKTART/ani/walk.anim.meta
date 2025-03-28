@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c1977071ded711a4a813ed70995f954e
+timeCreated: 1564637670
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 151564
+  packageName: Boomerang Girl
+  packageVersion: 1.0
+  assetPath: Assets/JKTART/ani/walk.anim
+  uploadId: 323330

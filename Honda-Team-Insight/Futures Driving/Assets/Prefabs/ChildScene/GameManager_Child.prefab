@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7745096149102669919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3158425336652232261}
+  - component: {fileID: 5844562246942619823}
+  - component: {fileID: 8495478001171137008}
+  - component: {fileID: 2590895185485568863}
+  - component: {fileID: 4294197730641656134}
+  - component: {fileID: 1641907301898284471}
+  m_Layer: 0
+  m_Name: GameManager_Child
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3158425336652232261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745096149102669919}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.823246, y: -1.3496237, z: 30.502012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5844562246942619823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745096149102669919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340df625af93744749329f187e5c578b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableMaterial: {fileID: 2100000, guid: 763d547f29cebc443a26da20545010dd, type: 2}
+  textHighlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+--- !u!114 &8495478001171137008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745096149102669919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee246b7f52644fc9abcdfa7630df4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yesNo: {fileID: 0}
+  yesTextComponent: {fileID: 0}
+  noTextComponent: {fileID: 0}
+--- !u!114 &2590895185485568863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745096149102669919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e224d53c6ab643129cd5dde0608f5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cabin: {fileID: 0}
+  steeringWheel: {fileID: 0}
+  carBody: {fileID: 0}
+  personalizedButtons: {fileID: 2100000, guid: d4fda2da1e75c41b88319b3894fcf7ed, type: 2}
+  personalizedDash: {fileID: 2100000, guid: 712993b488ef64b33863823de98ea172, type: 2}
+  personalizedDoors: {fileID: 2100000, guid: b3f31288846214d4c9faea4730d5ec67, type: 2}
+  personalizedSeats: {fileID: 2100000, guid: 3fe8ed3a5c30040c6b9ed105400a0907, type: 2}
+  childrenButtons: {fileID: 2100000, guid: 294f22e7ec4394ee98db2ffa122cfe8f, type: 2}
+  childrenDash: {fileID: 2100000, guid: 81a896e81cd014c7a80b7473c6cc5e8d, type: 2}
+  childrenDoors: {fileID: 2100000, guid: 87d57010d8797436f86b7cb610579ef9, type: 2}
+  childrenSeats: {fileID: 2100000, guid: ccac6d1d607be4e0bbc5bda47a92a060, type: 2}
+--- !u!114 &4294197730641656134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745096149102669919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6cdd4e599b14723a7eb8df0f37b931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iviScreen: {fileID: 0}
+  climateScreen: {fileID: 0}
+  clusterScreen: {fileID: 0}
+  personalizedClimateScreens: []
+  personalizedClusterScreens:
+  - {fileID: 2100000, guid: 51b84331cc69d4ebcb89c26cc79c78ab, type: 2}
+  - {fileID: 2100000, guid: 90cfd58bb94374479b29bff7209931e3, type: 2}
+  personalizedIviScreens:
+  - {fileID: 2100000, guid: e4339b3f93c7d426bada4800869e4e94, type: 2}
+  - {fileID: 2100000, guid: 1e0e30c5cc2f94a8e94f360a6f28f9d3, type: 2}
+  - {fileID: 2100000, guid: 06ecd414542054eb384c635fc2f77b3e, type: 2}
+  - {fileID: 2100000, guid: 9a2fc43a50bad40f2a28934268387bff, type: 2}
+  - {fileID: 2100000, guid: c42c053d902f1410d8e945a41ed6e8fe, type: 2}
+--- !u!114 &1641907301898284471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745096149102669919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed806219ff7b41e38148d80deb7a6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationHandler: {fileID: 0}
+  chooseYes: {fileID: 0}
+  windshieldUI: {fileID: 0}
+  windshieldUIText: {fileID: 0}
