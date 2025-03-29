@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 1
-    path: Assets/Scenes/Scene1_OfficeExterior.unity
+    path: Assets/Scenes/DemoV1/Scene1_OfficeExterior.unity
     guid: fd99febccb61041edb897fd170712537
   - enabled: 1
-    path: Assets/Scenes/Scene2_CarInterior.unity
+    path: Assets/Scenes/DemoV1/Scene2_CarInterior.unity
     guid: 3b2c28aa27c79491db23b0a983006f28
   - enabled: 1
-    path: Assets/Scenes/Scene3_Children.unity
+    path: Assets/Scenes/DemoV1/Scene3_Children.unity
     guid: e9b4fdee8e55e49778ede876e3728a71
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}

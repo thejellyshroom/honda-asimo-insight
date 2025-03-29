@@ -5,7 +5,7 @@ public class JournalAnimationHandler : MonoBehaviour
 
     public void HandleJournalAnimation()
     {
-        Animator journalAnimator = FindFirstObjectByType<ProgressionLogic>().getJournalAnimationTrigger().GetComponent<Animator>();
+        Animator journalAnimator = GetComponent<Animator>();
 
         if (journalAnimator != null)
         {
