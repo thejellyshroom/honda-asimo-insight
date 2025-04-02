@@ -257,7 +257,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &221705017 stripped
 GameObject:
@@ -785,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8863687007998093083, guid: 3366c93db35eb411296f198c97b81d15, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23
+      value: -61.95
       objectReference: {fileID: 0}
     - target: {fileID: 8863687007998093083, guid: 3366c93db35eb411296f198c97b81d15, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1840,14 +1840,14 @@ RectTransform:
   m_GameObject: {fileID: 1335650565}
   m_LocalRotation: {x: 0, y: 0.9961947, z: -0, w: -0.08715578}
   m_LocalPosition: {x: 0, y: 0, z: 0.311}
-  m_LocalScale: {x: 0.09670342, y: 0.052241124, z: 0.09670342}
+  m_LocalScale: {x: 0.09670342, y: 0.072881594, z: 0.09670342}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2048679313}
   m_LocalEulerAnglesHint: {x: 0, y: 190, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.166, y: 0.155}
+  m_AnchoredPosition: {x: 0.178, y: 0.198}
   m_SizeDelta: {x: 10, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335650567
@@ -3832,7 +3832,7 @@ PrefabInstance:
     - target: {fileID: 3575480198192153782, guid: cd00626f7724b4455a709c9815ed6aba, type: 3}
       propertyPath: music
       value: 
-      objectReference: {fileID: 8300000, guid: e8038bd884c864688886053da43a1703, type: 3}
+      objectReference: {fileID: 8300000, guid: 3541737a0bac54cbf90df290024d3a25, type: 3}
     - target: {fileID: 3575480198192153782, guid: cd00626f7724b4455a709c9815ed6aba, type: 3}
       propertyPath: goToCafe
       value: 
@@ -3922,6 +3922,7 @@ MonoBehaviour:
   animationHandler: {fileID: 126819152}
   windshieldUI: {fileID: 2048679312}
   windshieldUIText: {fileID: 1834691250}
+  heartrateUI: {fileID: 197846202}
   heartrateText: {fileID: 793146125}
   retractableTray: {fileID: 764532157}
   children: []

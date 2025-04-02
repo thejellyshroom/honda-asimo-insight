@@ -12,8 +12,8 @@ public class DriveCar : MonoBehaviour
 
     public void DriveToSchool()
     {
-        //moves to specific vector3 position throughout 30 seconds
-        StartCoroutine(MoveCarToPosition(new Vector3(-3.479f, 0.1494979f, -23f), 30.0f));
+        //moves to specific vector3 position throughout 50 seconds
+        StartCoroutine(MoveCarToPosition(new Vector3(-3.479f, 0.1494979f, -81.95f), 150.0f));
     }
 
     public IEnumerator MoveCarToPosition(Vector3 targetPosition, float duration)

@@ -3,6 +3,7 @@ using HMI.UI.Cluster.Car;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 public class PuzzleSceneProgression : MonoBehaviour
 {
 
@@ -11,9 +12,11 @@ public class PuzzleSceneProgression : MonoBehaviour
     [SerializeField] GameObject windshieldUI;
     [SerializeField] TextMeshProUGUI windshieldUIText;
 
+
     RaycastInteractable raycastInteractableScript;
     SteeringWheelAnimationController steeringWheelAnimationController;
     DriveCar driveCarScript;
+    [SerializeField] GameObject heartrateUI;
     [SerializeField] TextMeshProUGUI heartrateText;
     private float heartrateUpdateTimer = 0f;
     private float heartrateUpdateInterval = 1f;
@@ -47,12 +50,35 @@ public class PuzzleSceneProgression : MonoBehaviour
     void HeadToCafe()
     {
         PuzzleAudio.Instance.PlaySound(PuzzleAudio.Instance.getGoToCafe(), 1, 0.0f);
-        PuzzleAudio.Instance.PlaySound(PuzzleAudio.Instance.getMusic(), 0.4f, 5.0f);
+        PuzzleAudio.Instance.PlaySound(PuzzleAudio.Instance.getMusic(), 0.1f, 5.0f);
         driveCarScript.Invoke("DriveToSchool", PuzzleAudio.Instance.getGoToCafe().length + 1.0f);
 
         Invoke("AffirmativeUI", PuzzleAudio.Instance.getGoToCafe().length + 1.0f);
 
         assemblyStarted = true;
+        StartCoroutine(ShrinkHeartrateUI());
+    }
+
+    private IEnumerator ShrinkHeartrateUI()
+    {
+        //shrink heartrateUI to 0.5f, 0.5f, 0.5f over 3 seconds, all local transforms
+        Vector3 startScale = heartrateUI.transform.localScale;
+        Vector3 targetScale = new Vector3(0.3f, 0.3f, 0.3f);
+        Vector3 startPosition = heartrateUI.transform.localPosition;
+        Vector3 targetPosition = new Vector3(-0.656f, 1.249f, -0.377f);
+        float duration = 3.0f;
+        float elapsedTime = 0.0f;
+
+        while (elapsedTime < duration)
+        {
+            heartrateUI.transform.localScale = Vector3.Lerp(startScale, targetScale, elapsedTime / duration);
+            heartrateUI.transform.localPosition = Vector3.Lerp(startPosition, targetPosition, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        heartrateUI.transform.localScale = targetScale;
+        heartrateUI.transform.localPosition = targetPosition;
     }
 
     void AffirmativeUI()
