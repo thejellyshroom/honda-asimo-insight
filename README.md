@@ -14,5 +14,3 @@ You can download the builds from the following links:
 - [Jessica's Asimo Build](https://drive.google.com/file/d/1i1zuDvb6NZqqtrb2DQDzN1qphZx3ycnb/view?usp=sharing)
 - [Demi's Asimo Build](https://drive.google.com/file/d/1nTjijbrgIZE1MoxNTw3uIuBNXaaXxbJm/view?usp=sharing)
 - [Version 1 Build](https://drive.google.com/file/d/1EG3q5sYMsPjASudGGtIirT_1hCwDHI-7/view?usp=sharing)
-
-Please note that these builds are the only ones currently functional without additional modifications.
